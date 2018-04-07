@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PTRM/Itens</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--BARRA DE NAVEGACAO-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="patrimonio.html">Patrimônio</a></li>
+                <li><a href="ambientes.html">Ambientes</a></li>
+                <li class="active"><a href="itens.html">Itens</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Guilherme <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="index.html">Sair</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--TABELA DE AMBIENTES-->
+
+    <div class="container">
+    
+    <!-- ALERTAS -->
+        <div class="alert alert-success fade in" id="sucesso" style="display:none">
+            <a href="javascript:void(0);" onclick="document.getElementById('sucesso').style.display='none'" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Sucesso!</strong> O ítem foi alterado.
+        </div>
+        <div class="alert alert-success fade in" id="sucexcluir" style="display:none">
+            <a href="javascript:void(0);" onclick="document.getElementById('sucexcluir').style.display='none'" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Sucesso!</strong> O ítem foi excluído.
+        </div>
+        <div class="alert alert-success fade in" id="sucadicionar" style="display:none">
+            <a href="javascript:void(0);" onclick="document.getElementById('sucadicionar').style.display='none'" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Sucesso!</strong> O ítem foi adicionado.
+        </div>
+    <!-- FIM ALERTAS -->
+
+        <div class="row">
+            <div class="col-md-1">
+                <img style="max-width: 80%; height: auto; margin-top: 20px " src="imagens/itens.png">
+            </div>
+            <div class="col-md-9">
+                <h2 style="line-height: 80%; color: rgb(54,141,196) ;  margin-left: -2%"><b>Itens</b></h2>
+                <p style="margin-left: -2%">Nesta página estão listados os itens cadastrados no sistema:</p>
+            </div>
+            <div class="col-md-2">
+                <a data-toggle="modal" data-target="#adicionar" class="btn btn-lg btn-success" style=" margin-top: 20px "><span class="glyphicon glyphicon-plus-sign"></span> Novo Item </a>
+            </div>
+        </div>  
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Número</th>
+                    <th>Alterar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Computador</td>
+                    <td>Eletrônico</td>
+                    <td>987654</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Mesa</td>
+                    <td>Móvel</td>
+                    <td>657489</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Data-show</td>
+                    <td>Eletrônico</td>
+                    <td>325487</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Quadro</td>
+                    <td>Móvel</td>
+                    <td>657489</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Ar-condicionado</td>
+                    <td>Eletrônico</td>
+                    <td>145789</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Geladeira</td>
+                    <td>Eletrônico</td>
+                    <td>321548</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Cadeira</td>
+                    <td>Móvel</td>
+                    <td>568947</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Mesa professor</td>
+                    <td>Móvel</td>
+                    <td>012547</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+                <tr>
+                    <td>Tela</td>
+                    <td>Eletrônico</td>
+                    <td>854236</td>
+                    <td><a data-toggle="modal" data-target="#editar"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                    <td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--MODAL EXCLUIR-->
+    <div id="excluir" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="row">
+                  <div class="col-md-1">
+                    <h2><span class="glyphicon glyphicon-trash" style=" max-width: 200%; height: 200%; margin-top: 18px ;margin-top: 2% ; color: rgb(54,141,196)" ></span></h2>
+                  </div>
+                  <div class="col-md-11">
+                    <h3 class="modal-title" style="color: rgb(54,141,196) ; margin-top : 1px ; margin-left: -5px"><b>Excluir Item</b></h3>
+                  </div>
+                </div>
+            </div>
+                <div class="modal-body">
+                    <p>Deseja excluir este item?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"  onclick="document.getElementById('sucexcluir').style.display='block'">Sim</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Não</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL EDITAR-->
+    <div id="editar" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <h2><span class="glyphicon glyphicon-pencil" style=" max-width: 200%; height: 200%; margin-top: 18px ;margin-top: 2% ; color: rgb(54,141,196)" ></span></h2>
+                      </div>
+                      <div class="col-md-11">
+                        <h3 class="modal-title" style="color: rgb(54,141,196) ; margin-top : 1px ; margin-left: -5px"><b>Alterar Item</b></h3>
+                      </div>
+                    </div>
+                 </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="codigo">Código:</label>
+                            <input type="text" class="form-control" id="codigo">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição:</label>
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo:</label>
+                            <div class="selectContainer">
+                                <select class="form-control" name="size">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="e">Eletrônico</option>
+                                    <option value="m">Móvel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="document.getElementById('sucesso').style.display='block'">Alterar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MODAL ADICIONAR-->
+    <div id="adicionar" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <h2><span class="glyphicon glyphicon-plus-sign" style=" max-width: 200%; height: 200%; margin-top: 18px ;margin-top: 2% ; color: rgb(54,141,196)" ></span></h2>
+                      </div>
+                      <div class="col-md-11">
+                        <h3 class="modal-title" style="color: rgb(54,141,196) ; margin-top : 1px ; margin-left: -5px"><b>Novo Item</b></h3>
+                      </div>
+                    </div>
+                  </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="codigo">Código:</label>
+                            <input type="text" class="form-control" id="codigo">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição:</label>
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo:</label>
+                            <div class="selectContainer">
+                                <select class="form-control" name="size">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="e">Eletrônico</option>
+                                    <option value="m">Móvel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="document.getElementById('sucadicionar').style.display='block'">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

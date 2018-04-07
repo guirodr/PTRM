@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PTRM/Patrimônio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--BARRA DE NAVEGACAO-->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="patrimonio.html">Patrimônio</a></li>
+                <li><a href="ambientes.html">Ambientes</a></li>
+                <li><a href="itens.html">Itens</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Guilherme <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Conta</a></li>
+                    <li><a href="#">Configurações</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="index.html">Sair</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--PATRIMONIO-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <img style="max-width: 80%; height: auto; margin-top: 18px " src="imagens/patrimonio.png">
+            </div>
+            <div class="col-md-11">
+                <h2 style="line-height: 80%; color: rgb(54,141,196) ;  margin-left: -2%"><b>Patrimônio</b></h2>
+                <p style="margin-left: -2%">Nesta página estão listados os itens alocados nos ambientes:</p>
+            </div>
+        </div>
+        <br>
+    <!--SALA 01-->
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                	<div class="row">
+                	 <div class="col-md-11">
+      					<a data-toggle="collapse" href="#collapse1"><h4><b>Sala 01 (5791)</b></h4></a>
+      				 </div>
+      				 <div class="col-md-1">	
+    					<button type="button" class="btn btn-success" style="margin-left : -55% ; margin-top : 5%">Alocar ítem</button>
+    				 </div>
+    				</div>
+    			</h3>
+    		</div>
+
+    	<div id="collapse1" class="panel-collapse collapse">
+			<table class="table">
+				<thead>
+	               <tr>
+	                <th>Descrição</th>
+	                <th>Tipo</th>
+	                <th>Número</th>
+	                <th>Excluir</th>
+	               </tr>
+	            </thead>
+				<tbody>
+				  <tr>
+					<td>Computador</td>
+					<td>Eletrônico</td>
+					<td>987654</td>
+					<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+				  </tr>
+				  <tr>
+					<td>Mesa</td>
+					<td>Móvel</td>
+					<td>657489</td>
+					<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+				  </tr>
+				  <tr>
+					<td>Data-show</td>
+					<td>Eletrônico</td>
+					<td>325487</td>
+					<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+				  </tr>
+				  <tr>
+				</tbody>
+			</table>
+
+      	<div class="panel-footer"></div>
+    </div>
+  </div>
+  </div>
+
+
+<!--SALA 02-->
+
+  <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div class="row">
+        	 <div class="col-md-11">
+					<a data-toggle="collapse" href="#collapse2"><h4><b>Sala 02 (7458)</b></h4></a>
+				 </div>
+				 <div class="col-md-1">	
+				<button type="button" class="btn btn-success" style="margin-left : -55% ; margin-top : 5%">Alocar ítem</button>
+			 </div>
+			</div>
+      </h3>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+
+		<table class="table">
+			<thead>
+               <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Número</th>
+                <th>Excluir</th>
+               </tr>
+            </thead>
+			<tbody>
+			  <tr>
+				<td>Computador</td>
+				<td>Eletrônico</td>
+				<td>987654</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Mesa</td>
+				<td>Móvel</td>
+				<td>657489</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Data-show</td>
+				<td>Eletrônico</td>
+				<td>325487</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+			</tbody>
+		</table>
+
+      <div class="panel-footer">
+		
+	  </div>
+    </div>
+  </div>
+  </div>
+
+
+<!--SALA 03-->
+
+  <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div class="row">
+        	 <div class="col-md-11">
+					<a data-toggle="collapse" href="#collapse3"><h4><b>Sala 03 (6457)</b></h4></a>
+				 </div>
+				 <div class="col-md-1">	
+				<button type="button" class="btn btn-success" style="margin-left : -55% ; margin-top : 5%">Alocar ítem</button>
+			 </div>
+			</div>
+      </h3>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+
+		<table class="table">
+			<thead>
+               <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Número</th>
+                <th>Excluir</th>
+               </tr>
+            </thead>
+			<tbody>
+			  <tr>
+				<td>Computador</td>
+				<td>Eletrônico</td>
+				<td>987654</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Mesa</td>
+				<td>Móvel</td>
+				<td>657489</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Data-show</td>
+				<td>Eletrônico</td>
+				<td>325487</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+			</tbody>
+		</table>
+
+      <div class="panel-footer">
+	  </div>
+    </div>
+  </div>
+  </div>
+
+
+<!--ALMOXARIFADO-->
+
+  <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div class="row">
+        	 <div class="col-md-11">
+					<a data-toggle="collapse" href="#collapse4"><h4><b>Almoxarifado (3265)</b></h4></a>
+				 </div>
+				 <div class="col-md-1">	
+				<button type="button" class="btn btn-success" style="margin-left : -55% ; margin-top : 5%">Alocar ítem</button>
+			 </div>
+			</div>
+      </h3>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+
+		<table class="table">
+			<thead>
+               <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Número</th>
+                <th>Excluir</th>
+               </tr>
+            </thead>
+			<tbody>
+			  <tr>
+				<td>Computador</td>
+				<td>Eletrônico</td>
+				<td>987654</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Mesa</td>
+				<td>Móvel</td>
+				<td>657489</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Data-show</td>
+				<td>Eletrônico</td>
+				<td>325487</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+			</tbody>
+		</table>
+
+      <div class="panel-footer">
+	  </div>
+    </div>
+  </div>
+  </div>
+
+
+<!--SECRETARIA-->
+
+  <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <div class="row">
+        	 <div class="col-md-11">
+					<a data-toggle="collapse" href="#collapse5"><h4><b>Secretaria (2145)</b></h4></a>
+				 </div>
+				 <div class="col-md-1">	
+				<button type="button" class="btn btn-success" style="margin-left : -55% ; margin-top : 5%">Alocar ítem</button>
+			 </div>
+			</div>
+      </h3>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+
+		<table class="table">
+			<thead>
+               <tr>
+                <th>Descrição</th>
+                <th>Tipo</th>
+                <th>Número</th>
+                <th>Excluir</th>
+               </tr>
+            </thead>
+			<tbody>
+			  <tr>
+				<td>Computador</td>
+				<td>Eletrônico</td>
+				<td>987654</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Mesa</td>
+				<td>Móvel</td>
+				<td>657489</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+				<td>Data-show</td>
+				<td>Eletrônico</td>
+				<td>325487</td>
+				<td><a data-toggle="modal" data-target="#excluir"><span class="glyphicon glyphicon-trash"></span></a></td>
+			  </tr>
+			  <tr>
+			</tbody>
+		</table>
+
+      <div class="panel-footer">
+	  </div>
+    </div>
+  </div>
+  </div>
+
+<!--MODAL EXCLUIR-->
+
+<div id="excluir" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Excluir</h4>
+      </div>
+      <div class="modal-body">
+        <p>Deseja excluir este ítem?</p>
+      </div>
+      <div class="modal-footer">
+		<button type="button" class="btn btn-danger" data-dismiss="modal">Sim</button>
+		<button type="button" class="btn btn-primary" data-dismiss="modal">Não</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+<!--MODAL ADICIONAR-->
+    <div id="adicionar" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <div class="row">
+                      <div class="col-md-1">
+                        <h2><span class="glyphicon glyphicon-plus-sign" style=" max-width: 200%; height: 200%; margin-top: 18px ;margin-top: 2% ; color: rgb(54,141,196)" ></span></h2>
+                      </div>
+                      <div class="col-md-11">
+                        <h3 class="modal-title" style="color: rgb(54,141,196) ; margin-top : 1px ; margin-left: -5px"><b>Novo Item</b></h3>
+                      </div>
+                    </div>
+                  </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="codigo">Código:</label>
+                            <input type="text" class="form-control" id="codigo">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição:</label>
+                            <input type="text" class="form-control" id="descricao">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo">Tipo:</label>
+                            <div class="selectContainer">
+                                <select class="form-control" name="size">
+                                    <option value="">Escolha um tipo</option>
+                                    <option value="e">Eletrônico</option>
+                                    <option value="m">Móvel</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal" onclick="document.getElementById('sucadicionar').style.display='block'">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
